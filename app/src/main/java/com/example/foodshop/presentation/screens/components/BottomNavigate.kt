@@ -81,11 +81,7 @@ fun BottomNavigate(
                 letterSpacing = 0.sp,
                 textAlign = TextAlign.Center,
                 fontFamily = FontFamily(Font(Res.font.inter)),
-                style = TextStyle(
-                    fontSize = 12.sp,
-                    lineHeight = 16.sp,
-                    color = color // Установка цвета текста
-                )
+                color = color
             )
         }
         Column(
@@ -119,11 +115,7 @@ fun BottomNavigate(
                 letterSpacing = 0.sp,
                 textAlign = TextAlign.Center,
                 fontFamily = FontFamily(Font(Res.font.inter)),
-                style = TextStyle(
-                    fontSize = 12.sp,
-                    lineHeight = 16.sp,
-                    color = color
-                )
+                color = color
             )
         }
         Column(
@@ -157,11 +149,7 @@ fun BottomNavigate(
                 letterSpacing = 0.sp,
                 textAlign = TextAlign.Center,
                 fontFamily = FontFamily(Font(Res.font.inter)),
-                style = TextStyle(
-                    fontSize = 12.sp,
-                    lineHeight = 16.sp,
-                    color = color
-                )
+                color = color
             )
         }
 

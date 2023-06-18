@@ -8,14 +8,12 @@
 ## UI скриншот
 
 
-|             | Portrait                                         | 
-|-------------|--------------------------------------------------|
-| main screen | <img src="assets/main-screen.png" height="300">  |
-|             | <img src="assets/main-screen1.png" height="300"> |                                                                       |
-|             | <img src="assets/main-screen2.png" height="300"> |                                                                       |
-|             | <img src="assets/main-screen3.png" height="300"> |                                                                       |
-|             | <img src="assets/main-screen3.png" height="300"> |                                                                       |
-| gif         | <img src="assets/foodshop-mainscreen.gif"  >     |                                                                       |
+|                   | Portrait                                                     | 
+|-------------------|--------------------------------------------------------------|
+| main screen       | <img src="assets/main-screen1.png" height="300">             |                                                                       |
+|                   | <img src="assets/main-screen2.png" height="300">             |                                                                       |
+|                   | <img src="assets/main-screen3.png" height="300">             |                                                                       |
+| gif               | <img src="assets/foodshop-mainscreen.gif"  height="300">     |                                                                       |
 
 ## использованные технологии
 

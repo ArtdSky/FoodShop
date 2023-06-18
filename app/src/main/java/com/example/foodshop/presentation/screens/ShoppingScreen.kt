@@ -17,7 +17,7 @@ fun ShoppingScreen(
     currentScreen: AppDestination,
     vm: MainViewModel
 ) {
-    Text(text = "Shop screen")
+    Text(text = "Shopping-cart screen development in progress")
 
 
 

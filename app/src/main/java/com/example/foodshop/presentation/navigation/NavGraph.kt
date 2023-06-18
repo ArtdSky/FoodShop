@@ -9,6 +9,13 @@ import com.example.foodshop.presentation.screens.ProfileScreen
 import com.example.foodshop.presentation.screens.ShoppingScreen
 import com.example.foodshop.presentation.viewmodel.MainViewModel
 
+/**
+ * Функция для создания графа навигации.
+ *
+ * @param navController контроллер навигации.
+ * @param currentScreen текущий экран приложения.
+ * @param vm ViewModel, используемая для управления состоянием экрана.
+ */
 @Composable
 fun NavGraph(
     navController: NavHostController,

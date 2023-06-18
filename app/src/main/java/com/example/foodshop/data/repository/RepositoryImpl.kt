@@ -7,10 +7,19 @@ import com.example.foodshop.domain.models.FoodData
 import com.example.foodshop.domain.repository.FoodRepository
 import kotlinx.coroutines.flow.single
 
+/**
+ * Класс реализует интерфейс `FoodRepository`
+ * @param storage хранилище данных, предоставляющее доступ к данным
+ */
 class RepositoryImpl(
     private val storage: Storage
 ) : FoodRepository {
 
+    /**
+     * Метод получает все данные о еде.
+     *
+     * @return объект [FoodData] или `null`, в зависимости от результата получения данных.
+     */
     override suspend fun getFoodData(): FoodData? {
         return when (val foodData = storage.getAllFoodData().single()) {
             is ResponseWrapper.Success -> {

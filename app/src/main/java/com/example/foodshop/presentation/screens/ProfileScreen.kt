@@ -17,7 +17,7 @@ fun ProfileScreen(
     currentScreen: AppDestination,
     vm: MainViewModel
 ) {
-    Text("PROFILE SCREEN")
+    Text("Profile screen development in progress")
 
 
 

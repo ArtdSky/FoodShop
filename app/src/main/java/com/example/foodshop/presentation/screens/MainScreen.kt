@@ -224,6 +224,7 @@ fun MainScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
+                    .padding(bottom = 36.dp)
             ) {
                 LazyColumn(
                     contentPadding = PaddingValues(horizontal = 16.dp),

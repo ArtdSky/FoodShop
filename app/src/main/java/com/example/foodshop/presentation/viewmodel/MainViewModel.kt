@@ -14,9 +14,6 @@ class MainViewModel(
  private val getAllFoodData: GetAllFoodData
 ) : ViewModel(){
 
-    init{
-
-    }
 
     private val _viewState = MutableStateFlow(
         ViewState()

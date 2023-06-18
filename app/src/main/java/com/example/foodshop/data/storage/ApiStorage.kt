@@ -8,7 +8,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
+/**
+ * Класс рреализует интерфейса `Storage`
+ */
 class ApiStorage : Storage {
+    /**
+     * Метод для получения всех данных о еде из хранилища.
+     *
+     * @return [Flow] с оберткой [ResponseWrapper] для результата сетевого вызова. Результат содержит [ResponseFoodData]
+     * или информацию об ошибке.
+     */
     override suspend fun getAllFoodData(): Flow<ResponseWrapper<ResponseFoodData>> {
         val res : Flow<ResponseWrapper<ResponseFoodData>> = flow{
             val response = safeNetworkCall(Dispatchers.IO){

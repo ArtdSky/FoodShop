@@ -8,6 +8,11 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.foodshop.presentation.viewmodel.MainViewModel
 
+/**
+ * Функция для управления навигацией между экранами приложения.
+ *
+ * @param vm ViewModel, используемая для управления состоянием экрана.
+ */
 @Composable
 fun NavState(
     vm: MainViewModel
@@ -27,6 +32,11 @@ fun NavState(
     )
 }
 
+/**
+ * Функция-расширение для [NavHostController], позволяющее выполнить навигацию с флагом singleTop.
+ *
+ * @param route путь для навигации.
+ */
 fun NavHostController.navigateSingleTopTo(route: String) {
     this.navigate(route) {
         popUpTo(

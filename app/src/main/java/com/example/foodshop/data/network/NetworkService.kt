@@ -5,6 +5,9 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
+/**
+ * Синглтон сервис конфгурирующий ретрофит
+ */
 object NetworkService {
     private const val BASE_URL =
         "https://run.mocky.io/"
@@ -18,6 +21,9 @@ object NetworkService {
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 
+    /**
+     * Возвращает экземпляр ретрофит реализующий интерфейс [NetworkEndpoint]
+     */
     val retrofitService by lazy {
         retrofit.create(NetworkEndpoint::class.java)
     }
